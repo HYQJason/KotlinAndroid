@@ -1,0 +1,42 @@
+ext {
+
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "26.0.2",
+            applicationId:"com.test.project",
+            minSdkVersion    : 18,
+            targetSdkVersion : 26,
+            versionCode      : 22,
+            versionName      : "4.0.1"
+    ]
+
+    dependVersion = [
+            support_Version: "27.1.1",
+            glide_Version: "3.7.0",
+            SmartRefresh_Version: "1.1.0-alpha-14"
+
+
+    ]
+
+    dependencies = [
+            // support
+            supportV4    : "com.android.support:support-v4:${dependVersion.support_Version}",
+            appcompatV7  : "com.android.support:appcompat-v7:${dependVersion.support_Version}",
+            recyclerview : "com.android.support:recyclerview-v7:${dependVersion.support_Version}",
+            design       : "com.android.support:design:${dependVersion.support_Version}",
+            // 测试
+            junit        : "junit:junit:4.12",
+            espresso     : "com.android.support.test.espresso:espresso-core:2.2.2",
+            // 第三方
+            rxpermissions: "com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar",
+            rxjava       : "io.reactivex.rxjava2:rxjava:2.1.0",
+            glide        : "com.github.bumptech.glide:${dependVersion.glide_Version}",
+            smartRefreshLayout : "com.scwang.smartrefresh:SmartRefreshLayout:${dependVersion.SmartRefresh_Version}",
+            smartRefreshHeader : "com.scwang.smartrefresh:SmartRefreshHeader:${dependVersion.SmartRefresh_Version}",//没有使用特殊Header，可以不加这行
+            rxpermissions :"com.github.tbruyelle:rxpermissions:0.10.2",
+            rxjava :"io.reactivex.rxjava2:rxjava:2.1.1",
+            externalStatusBar:  'com.githang:status-bar-compat:0.7'
+
+    ]
+
+}

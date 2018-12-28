@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.jajaying.kotlinproject.act.BluetoothActivity">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openbluetooth"
+        android:text="打开蓝牙"
+      />
+    <Button
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="endbluetooth"
+        android:text="关闭蓝牙"
+      />
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="stopscan"
+        android:text="停止扫描"
+       />
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="scan"
+        android:text="开始扫描"
+        />
+</LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bluetoothRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    ></android.support.v7.widget.RecyclerView>
+</LinearLayout>
